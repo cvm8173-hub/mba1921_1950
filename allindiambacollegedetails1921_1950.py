@@ -8469,23 +8469,23 @@ def parse_faculty_full_html(driver,URLS):
     try:
         section = wait.until(
             EC.presence_of_element_located(
-                (By.CSS_SELECTOR,"div.wikkiContents.faqAccordian")
+                (By.CSS_SELECTOR, "div.wikkiContents.faqAccordian")
             )
         )
     except:
-        print("⚠️ parse_review_summarisation_all_tabs not available, skipping")
+        print("⚠️ parse_faculty_full_html not available, skipping")
+        return None
     
-    if section:
-        driver.execute_script(
-            "arguments[0].scrollIntoView({block:'center'});", section
-        )
-        time.sleep(2)
+    # Scroll
+    driver.execute_script(
+        "arguments[0].scrollIntoView({block:'center'});", section
+    )
+    time.sleep(2)
     
-        html = driver.execute_script(
-            "return arguments[0].innerHTML;", section
-        )
-    else:
-        html = None
+    # 🔥 Re-locate element to avoid stale reference
+    section = driver.find_element(By.CSS_SELECTOR, "div.wikkiContents.faqAccordian")
+    
+    html = section.get_attribute("innerHTML")
     soup = BeautifulSoup(html, "html.parser")
 
     data = {
