@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/dattakala-group-of-institution-maharashtra-other-60063",
-  "https://www.shiksha.com/college/sree-narayana-institute-of-technology-adoor-pathanamthitta-60632",
-  "https://www.shiksha.com/college/vignana-bharathi-engineering-college-ibrahimpatnam-hyderabad-68417",
-  "https://www.shiksha.com/college/dnyan-kala-krida-and-krushi-pratishthan-maharashtra-institute-of-management-pune-71483",
-  "https://www.shiksha.com/college/shahjahan-college-of-business-management-hyderabad-75805",
-  "https://www.shiksha.com/college/fisheries-business-school-vaniyanchavadi-tamil-nadu-fisheries-university-chennai-106345",
-  "https://www.shiksha.com/college/ilam-dehradun-institute-of-logistics-and-aviation-management-dehradun-57317",
-  "https://www.shiksha.com/college/tmss-college-of-management-telangana-other-62267",
-  "https://www.shiksha.com/college/sharadchandra-pawar-institute-of-management-kalyani-nagar-pune-64345",
-  "https://www.shiksha.com/college/nri-institute-of-information-science-and-technology-bhopal-64521",
-  "https://www.shiksha.com/university/govind-guru-tribal-university-banswara-65117",
-  "https://www.shiksha.com/college/a-and-m-institute-of-management-and-technology-pathankot-66195",
-  "https://www.shiksha.com/college/shree-sahajanand-institute-of-management-bhavnagar-69209",
-  "https://www.shiksha.com/college/aurobindo-college-of-business-management-ranga-reddy-70799",
-  "https://www.shiksha.com/college/bm-professional-institute-indore-147459",
-  "https://www.shiksha.com/college/ganesh-institute-of-management-studies-khurda-148045",
-  "https://www.shiksha.com/college/smt-k-g-mittal-institute-of-management-mumbai-190363",
-  "https://www.shiksha.com/college/g-h-raisoni-skill-tech-university-nagpur-227591",
-  "https://www.shiksha.com/college/asan-institute-of-management-velachery-chennai-13658",
-  "https://www.shiksha.com/college/bldea-s-v-p-dr-p-g-halakatti-college-of-engineering-and-technology-bijapur-24959",
+  "https://www.shiksha.com/college/a-d-institute-of-science-and-management-aurangabad-113885",
+  "https://www.shiksha.com/college/ballarpur-institute-of-technology-chandrapur-115269",
+  "https://www.shiksha.com/college/shri-jain-diwakar-mahavidyalaya-indore-147181",
+  "https://www.shiksha.com/college/khajuraho-institute-of-pharmaceutical-sciences-chhatarpur-147301",
+  "https://www.shiksha.com/college/adarsh-shikshan-prasarak-mandal-s-k-t-patil-college-of-mba-osmanabad-228593",
+  "https://www.shiksha.com/college/sri-chundi-ranganayakulu-engineering-college-screc-guntur-2656",
+  "https://www.shiksha.com/college/bits-group-of-institutions-bits-bhiwani-haryana-other-3991",
+  "https://www.shiksha.com/college/maharishi-institute-of-management-mim-noida-greater-noida-20574",
+  "https://www.shiksha.com/college/oxford-engineering-college-tiruchirappalli-20815",
+  "https://www.shiksha.com/college/sai-spurthi-institute-of-technology-ssit-khammam-21056",
+  "https://www.shiksha.com/college/indo-german-training-centre-bangalore-cunningham-road-city-22654",
+  "https://www.shiksha.com/college/s-b-group-of-institution-yelahanaka-bangalore-69503",
+  "https://www.shiksha.com/college/adarsh-college-of-business-management-dhar-157013",
+  "https://www.shiksha.com/college/s-p-c-j-institute-of-management-agra-180047",
+  "https://www.shiksha.com/college/annai-vailankanni-college-of-arts-and-science-thanjavur-193763",
+  "https://www.shiksha.com/college/pharate-patil-management-institute-shirur-pune-228503",
+  "https://www.shiksha.com/college/sas-group-of-institutions-chandigarh-25135",
+  "https://www.shiksha.com/college/chinmaya-institute-of-management-cooke-town-bangalore-37925",
+  "https://www.shiksha.com/college/gateway-institute-of-engineering-and-technology-gateway-education-sonepat-38658",
+  "https://www.shiksha.com/college/modern-engineering-and-management-studies-balasore-48008",
 ]
 
 
@@ -9241,7 +9241,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =1911
+    c_count =2191
 
     try:
         for base_url in BASE_URL:
