@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/a-d-institute-of-science-and-management-aurangabad-113885",
-  "https://www.shiksha.com/college/ballarpur-institute-of-technology-chandrapur-115269",
-  "https://www.shiksha.com/college/shri-jain-diwakar-mahavidyalaya-indore-147181",
-  "https://www.shiksha.com/college/khajuraho-institute-of-pharmaceutical-sciences-chhatarpur-147301",
-  "https://www.shiksha.com/college/adarsh-shikshan-prasarak-mandal-s-k-t-patil-college-of-mba-osmanabad-228593",
-  "https://www.shiksha.com/college/sri-chundi-ranganayakulu-engineering-college-screc-guntur-2656",
-  "https://www.shiksha.com/college/bits-group-of-institutions-bits-bhiwani-haryana-other-3991",
-  "https://www.shiksha.com/college/maharishi-institute-of-management-mim-noida-greater-noida-20574",
-  "https://www.shiksha.com/college/oxford-engineering-college-tiruchirappalli-20815",
-  "https://www.shiksha.com/college/sai-spurthi-institute-of-technology-ssit-khammam-21056",
-  "https://www.shiksha.com/college/indo-german-training-centre-bangalore-cunningham-road-city-22654",
-  "https://www.shiksha.com/college/s-b-group-of-institution-yelahanaka-bangalore-69503",
-  "https://www.shiksha.com/college/adarsh-college-of-business-management-dhar-157013",
-  "https://www.shiksha.com/college/s-p-c-j-institute-of-management-agra-180047",
-  "https://www.shiksha.com/college/annai-vailankanni-college-of-arts-and-science-thanjavur-193763",
-  "https://www.shiksha.com/college/pharate-patil-management-institute-shirur-pune-228503",
-  "https://www.shiksha.com/college/sas-group-of-institutions-chandigarh-25135",
-  "https://www.shiksha.com/college/chinmaya-institute-of-management-cooke-town-bangalore-37925",
-  "https://www.shiksha.com/college/gateway-institute-of-engineering-and-technology-gateway-education-sonepat-38658",
-  "https://www.shiksha.com/college/modern-engineering-and-management-studies-balasore-48008",
+  "https://www.shiksha.com/college/k-l-b-d-a-v-college-for-girls-palampur-68245",
+  "https://www.shiksha.com/college/sai-baba-adarsh-mahavidyalaya-chhattisgarh-other-69095",
+  "https://www.shiksha.com/college/culinary-guru-institute-of-hotel-management-hyderabad-70279",
+  "https://www.shiksha.com/college/college-of-advance-computing-berhampur-71249",
+  "https://www.shiksha.com/college/pillai-hoc-institute-of-management-studies-and-research-phimsr-raigad-73249",
+  "https://www.shiksha.com/college/swami-vivekanand-college-of-professional-studies-sehore-77127",
+  "https://www.shiksha.com/college/vishwa-vishwani-school-of-business-hyderabad-244306",
+  "https://www.shiksha.com/college/jp-institute-of-hotel-management-catering-technology-meerut-24976",
+  "https://www.shiksha.com/college/park-global-school-of-business-excellence-chennai-pgsobec-kanchipuram-30327",
+  "https://www.shiksha.com/college/delhi-institute-of-management-and-research-south-ex-2-33255",
+  "https://www.shiksha.com/college/kns-world-management-college-gurgaon-36829",
+  "https://www.shiksha.com/college/bhabha-institute-of-technology-kanpur-37486",
+  "https://www.shiksha.com/college/international-institute-of-fashion-technology-naraina-naraina-delhi-41217",
+  "https://www.shiksha.com/college/bhutta-college-of-engineering-and-technology-ludhiana-43191",
+  "https://www.shiksha.com/college/sri-mittapalli-institute-of-technology-for-women-smitw-guntur-47920",
+  "https://www.shiksha.com/college/n-c-college-of-engineering-panipat-53170",
+  "https://www.shiksha.com/college/institute-of-hotel-management-and-culinary-science-jaipur-58543",
+  "https://www.shiksha.com/college/dr-om-prakash-institute-of-management-technology-uttar-pradesh-other-59871",
+  "https://www.shiksha.com/college/jp-school-of-business-meerut-59939",
+  "https://www.shiksha.com/college/m-k-group-of-institutes-amritsar-60415",
 ]
 
 
@@ -9241,7 +9241,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2191
+    c_count =2511
 
     try:
         for base_url in BASE_URL:
